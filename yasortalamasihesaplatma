@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+ int main() {
+ int yaslar[] = {24,26,27,36,61,84};
+
+ int lenght = sizeof(yaslar)/sizeof (yaslar[0]);
+
+ float ort,toplam = 0;
+
+ int i;
+
+ for (i=0; i<lenght; i++) {
+    toplam += yaslar[i];
+ }
+    ort = toplam/lenght;
+    printf("Yaslar ortalamasi : %.2f",ort);
+    return 0;
+ }
